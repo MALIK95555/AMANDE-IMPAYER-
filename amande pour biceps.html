@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement d'Amende</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        .input-field {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Amende en cours</h1>
+        <p>Vous avez une amende impayée de 150€.</p>
+        
+        <form action="#" method="post">
+            <div class="input-field">
+                <label for="name">Nom Complet</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+            </div>
+
+            <div class="input-field">
+                <label for="card">Numéro de Carte Bancaire</label>
+                <input type="text" id="card" name="card" placeholder="Votre numéro de carte" required>
+            </div>
+
+            <div class="input-field">
+                <label for="expiry">Date d'Expiration</label>
+                <input type="month" id="expiry" name="expiry" required>
+            </div>
+
+            <button type="submit" class="button">Payer maintenant</button>
+        </form>
+        
+        <div class="footer">
+            <p>Ce site est uniquement à des fins éducatives. Aucun paiement ne sera effectué.</p>
+        </div>
+    </div>
+</body>
+</html>
